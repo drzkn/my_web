@@ -4,6 +4,11 @@ body{
     font-family: 'Abel';
 }
 
+
+.item{
+    padding: 0px 10%;
+}
+
 #menu-1{
     height: 40px;
     color: #fff;
@@ -104,8 +109,71 @@ i{
     border-bottom: 2px solid #376252;
 }
 
+#content-info{
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #ecf0ee;
+}
+
+#content-info-top{
+    font-size: 13px;
+    height: 20px;
+}
+
+#content-info-top-left,
+#content-info-top-right{
+    margin-top:5px;
+}
+
+#content-info-top-left{
+    float:left;
+}
+
+#content-info-top-right{
+    float:right;
+}
+
+#content-info-top-right span,
+#content-info-top-left i{
+    color: #3a9017;
+}
+
+#content-info-middle{
+    height: 51px;
+    font-weight: bold;
+}
+
+#content-info-middle-left,
+#content-info-middle-right{
+    margin-top:5px;
+}
+
+#content-info-middle-left{
+    float:left;
+}
+
+#content-info-middle-right{
+    float:right;
+}
+
+#content-info-middle-left span,
+#content-info-middle-right span{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+#content-info-bottom{
+    height: 20px;
+}
+
+#content-info-bottom-right{
+    float:right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #9d9d9c;
+}
+
 #footer{
-    /* background-color: black; */
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -118,20 +186,16 @@ i{
     height: 50px;
 }
 
-#footer #top-footer #top-footer-left{
+#top-footer-left{
     float: left;
 }
 
-#footer #top-footer #top-footer-right{
+#top-footer-right{
     float: right;
 }
 
-#footer #top-footer #top-footer-right img{
+#top-footer-right img{
     margin-top: 13px;
-}
-
-.top-footer-item{
-    padding: 0px 10%;
 }
 
 #bottom-footer{
@@ -139,16 +203,12 @@ i{
     height: 30px;
 }
 
-#footer #bottom-footer #bottom-footer-left{
+#bottom-footer-left{
     float: left;
 }
 
-#footer #bottom-footer #bottom-footer-right{
+#bottom-footer-right{
     float: right;
-}
-
-.bottom-footer-item{
-    padding: 0px 10%;
 }
 
 #bottom-footer{
