@@ -52,7 +52,12 @@ i{
 
 #menu-2-right{
     float: right;
-    margin-top: 19px;
+    margin-right: 47px;
+}
+
+#menu-2-right span{
+    position: absolute;
+    margin-right: 10px !important;
 }
 
 #menu-2-left nav {
@@ -61,11 +66,11 @@ i{
 
 #menu-2-right a img{
     border-radius: 50%;
-    margin-top: 5px;
+    margin-top: 9px;
 }
 
 #menu-2-right a span{
-    margin: 4px 4px;
+    margin: 19px 4px;
 }
 
 #menu-2-left nav a,
@@ -109,68 +114,164 @@ i{
     border-bottom: 2px solid #376252;
 }
 
-#content-info{
+#content-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 100px;
     background: #fff;
     border-bottom: 1px solid #ecf0ee;
 }
 
-#content-info-top{
-    font-size: 13px;
-    height: 20px;
+div.block {
+    padding: 0px 10%;
 }
 
-#content-info-top-left,
-#content-info-top-right{
-    margin-top:5px;
+#content-info-block-left,
+#content-info-block-right{
+    display: flex;
+    flex-direction: column;
 }
 
-#content-info-top-left{
-    float:left;
+#content-info-block-left{
+    text-align: left;
 }
 
-#content-info-top-right{
-    float:right;
+#content-info-block-right{
+    text-align: right;
 }
 
-#content-info-top-right span,
-#content-info-top-left i{
+.first-line i,
+.first-line span {
     color: #3a9017;
 }
 
-#content-info-middle{
-    height: 51px;
+.second-line.left{
+    text-transform: uppercase;
+    font-size: 40px; 
+}
+
+.second-line.right span#money {
+    text-transform: uppercase;
+    font-size: 40px; 
     font-weight: bold;
 }
 
-#content-info-middle-left,
-#content-info-middle-right{
-    margin-top:5px;
+.second-line.right span#currency {
+    position: absolute;
+    margin-top: 4px;
 }
 
-#content-info-middle-left{
-    float:left;
+.second-line.right {
+    margin-right: 8px;
 }
 
-#content-info-middle-right{
-    float:right;
-}
-
-#content-info-middle-left span,
-#content-info-middle-right span{
-    text-transform: uppercase;
-    font-size: 35px;
-}
-
-#content-info-bottom{
-    height: 20px;
-}
-
-#content-info-bottom-right{
+.third-line{
     float:right;
     font-size: 12px;
     font-weight: bold;
     color: #9d9d9c;
+}
+
+#top-separation-bar{
+    color: #2c5042
+}
+
+#arrow-return{
+    padding-right: 4px;
+}
+
+.separation-bar{
+    margin: 0px 8px;
+}
+
+#body-container{
+    display: flex;
+    padding: 30px 10% 0px 10%;
+    flex-direction: column;
+    background-image: url("discount.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.body-rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+}
+
+#body-container-second-line{
+    margin-top: 30px;
+}
+
+.body-container-column{
+    background: #fff;
+}
+
+.body-container-first-row-item{
+    width: 50%;
+}
+
+#body-container-first-line-left{
+    margin-right: 15px; 
+}
+
+#body-container-first-line-right{
+    margin-left: 15px; 
+}
+
+.body-container-second-row-item{
+    width: 33%;
+}
+
+#body-container-second-line-left{
+    margin-right: 15px;
+}
+
+#body-container-second-line-middle{
+    margin: 0px 15px;
+}
+
+#body-container-second-line-right{
+    margin-left: 15px;
+}
+
+.body-container-column{
+    display: flex;
+    flex-direction: row;
+}
+
+.body-container-item{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 20px;
+}
+
+.body-container-item-title{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.body-container-item-footer{
+    margin-top: 15px;
+}
+
+.body-container-item-body{
+    margin-top: 5px;
+}
+
+.body-container-item-footer span{
+    font-size: 35px;
+}
+
+.red{
+    color: #c20533;
+}
+
+.green{
+    color: #278600;
 }
 
 #footer{
@@ -200,6 +301,7 @@ i{
 
 #bottom-footer{
     background-color: #fff;
+    padding-top: 5px;    
     height: 30px;
 }
 
@@ -211,15 +313,12 @@ i{
     float: right;
 }
 
-#bottom-footer{
-    margin-top: 5px;    
-}
-
 #bottom-footer-right nav a{
     font-size: 11px;
     font-weight: bold;
     color: #555;
     text-decoration: none;
+    margin: 0px 0px 0px 25px;
 }
 
 #bottom-footer #bottom-footer-left i,

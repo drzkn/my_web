@@ -16,6 +16,7 @@
             </div>
             <div id="menu-1-right" class="menu-1-item">
                 <i id="bell-notification" class="fas fa-bell"></i>
+                <span id="top-separation-bar" class="separation-bar">|</span>
                 <span id="logout-text">Cerrar Sesión</span>
                 <i class="fas fa-sign-out-alt"></i>
             </div>
@@ -35,8 +36,8 @@
             </div>
             <div id="menu-2-right" class="menu-2-item">
                 <a href="https://www.w3schools.com">
-                    <!-- <img src="skyline.jpg" alt="skyline" width="48"> -->
-                    Mi área
+                    <img src="skyline.jpg" alt="skyline" width="36">
+                    <span>Mi área</span>
                 </a>
             </div>
         </div>
@@ -55,27 +56,72 @@
         </div>
 
         <div id="content-info">
-            <div id="content-info-top">
-                <div id="content-info-top-left" class="item">
-                    <i class="fas fa-chevron-left"></i>
-                    Volver
+            <div id="content-info-block-left" class="block">
+                <div class="first-line">
+                    <i class="fas fa-chevron-left" id="arrow-return"></i>Volver
                 </div>
-                <div id="content-info-top-right" class="item">
-                    <span>Total transferido <i class="fas fa-exclamation"></i></span>
-                    <span>Ocultar importe <i class="far fa-eye-slash"></i></span>
-                </div>
-            </div>
-            <div  id="content-info-middle">
-                <div id="content-info-middle-left" class="item">
+                <div class="second-line left">
                     <span>Tus transferencias</span>
                 </div>
-                <div id="content-info-middle-right" class="item">
-                    <span>925'42</span>€
+            </div>
+            <div id="content-info-block-right" class="block">
+                <div class="first-line">
+                    <span>Total transferido <i class="fas fa-info-circle"></i></span>
+                    <span class="separation-bar">|</span>
+                    <span>Ocultar importe <i class="far fa-eye-slash"></i></span>
+                </div>
+                <div class="second-line right">
+                    <span id="money">925'42</span><span id="currency">€</span>
+                </div>
+                <div class="third-line">
+                    Aún te quedan 145.58€
                 </div>
             </div>
-            <div  id="content-info-bottom">
-                <div id="content-info-bottom-right" class="item">
-                    Aún te quedan 145.58€
+        </div>
+
+        <div id="body-container">
+            <div id="body-container-first-line" class="body-rows">
+                <div id="body-container-first-line-left" class="body-container-column body-container-first-row-item">
+                    <img src="Pendientes.png" alt="pendientes" height="150">
+                    <div class="body-container-item">
+                        <div class="body-container-item-title red">Pendientes<i class="fas fa-arrow-right"></i></div>
+                        <div class="body-container-item-body">Operaciones pendientes de firma y transferencia urgentes</div>
+                        <div class="body-container-item-footer"><span>1</span> pendiente de firma</div>
+                    </div>
+                </div>
+                <div id="body-container-first-line-right" class="body-container-column body-container-first-row-item">
+                    <img src="Borradores.png" alt="borradores" height="150">
+                    <div class="body-container-item">
+                        <div class="body-container-item-title red">Borradores<i class="fas fa-arrow-right"></i></div>
+                        <div class="body-container-item-body">Transferencia sin finalizar</div>
+                        <div class="body-container-item-footer"><span>2</span> transferencias en curso</div>
+                    </div>                    
+                </div>
+            </div>
+            <div id="body-container-second-line" class="body-rows">
+                <div id="body-container-second-line-left" class="body-container-column body-container-second-row-item">
+                    <img src="Histórico.png" alt="historico" height="150">
+                    <div class="body-container-item">
+                        <div class="body-container-item-title green">Histórico<i class="fas fa-arrow-right"></i></div>
+                        <div class="body-container-item-body">Todas las transferencias</div>
+                        <div class="body-container-item-footer"><img src="PN.png" height="35" alt="PN"> Contacto frecuente</div>
+                    </div>                    
+                </div>
+                <div id="body-container-second-line-middle" class="body-container-column body-container-second-row-item">
+                    <img src="Favoritas.png" alt="favoritas" height="150">
+                    <div class="body-container-item">
+                        <div class="body-container-item-title green">Favoritos<i class="fas fa-arrow-right"></i></div>
+                        <div class="body-container-item-body">Transferencias guardads como favoritas</div>
+                        <div class="body-container-item-footer"><span>6</span> Favoritas</div>
+                    </div>
+                </div>
+                <div id="body-container-second-line-right" class="body-container-column body-container-second-row-item">
+                    <img src="Programadas.png" alt="programadas" height="150">
+                    <div class="body-container-item">
+                        <div class="body-container-item-title green">Programadas<i class="fas fa-arrow-right"></i></div>
+                        <div class="body-container-item-body">Se emitirán más adelante o de forma recurrente</div>
+                        <div class="body-container-item-footer"><span>2</span> Puntuales <span>4</span> Periódicas</div>
+                    </div>                    
                 </div>
             </div>
         </div>
