@@ -1,12 +1,20 @@
 body{
     background-color: #f5f7f7;
     margin: 0px;
+    height: 900px;
     font-family: 'Abel';
 }
 
-
 .item{
     padding: 0px 10%;
+}
+
+#logo-menu {
+    padding: 10px;
+}
+
+#logo-footer {
+    padding: 5px;
 }
 
 #menu-1{
@@ -35,9 +43,21 @@ i{
     padding-left: 3px;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
 .menu-1-item{
     padding: 10px 10%;
     display: inline;
+}
+
+.menu-1-item a{
+    color: #fff;
 }
 
 #menu-2{
@@ -70,7 +90,7 @@ i{
 }
 
 #menu-2-right a span{
-    margin: 19px 4px;
+    margin: 17px 4px;
 }
 
 #menu-2-left nav a,
@@ -79,11 +99,6 @@ i{
     color: #fff;
     text-decoration: none;
     padding: 0px 5px;
-}
-#menu-2-left nav a:hover,
-#menu-2-left nav a:active{
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .menu-2-item{
@@ -106,11 +121,10 @@ i{
     text-transform: uppercase;
     color:#376252;
     margin: 0px 40px 0px 0px;
+    padding: 30px 0px 28px 0px;
 }
 
 #menu-3 nav a:hover{
-    font-weight: bold;
-    text-decoration: none;
     border-bottom: 2px solid #376252;
 }
 
@@ -189,9 +203,6 @@ div.block {
     display: flex;
     padding: 30px 10% 0px 10%;
     flex-direction: column;
-    background-image: url("discount.png");
-    background-repeat: no-repeat;
-    background-position: right;
 }
 
 .body-rows{
@@ -243,6 +254,20 @@ div.block {
     flex-direction: row;
 }
 
+.body-container-column a{
+    color: #000;
+}
+
+a.body-container-link{
+    display: flex;
+    width: 100%;
+}
+
+a.body-container-link:hover{
+    font-weight: 100;
+    background: #eee;
+}
+
 .body-container-item{
     display: flex;
     flex-direction: column;
@@ -278,7 +303,7 @@ div.block {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 85px;
     color: white;
 }
 
@@ -301,7 +326,7 @@ div.block {
 
 #bottom-footer{
     background-color: #fff;
-    padding-top: 5px;    
+    padding-top: 8px;    
     height: 30px;
 }
 
@@ -314,7 +339,7 @@ div.block {
 }
 
 #bottom-footer-right nav a{
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     color: #555;
     text-decoration: none;
@@ -323,7 +348,13 @@ div.block {
 
 #bottom-footer #bottom-footer-left i,
 #bottom-footer #bottom-footer-left span{
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     color: #555;
+}
+
+.text-footer-bottom{
+    font-size: 12px;
+    font-weight: bold;
+    color: #555; 
 }
