@@ -5,6 +5,19 @@ body{
     font-family: 'Abel';
 }
 
+i{
+    padding-left: 3px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
 .item{
     padding: 0px 10%;
 }
@@ -19,16 +32,22 @@ body{
 
 #menu-1{
     height: 40px;
-    color: #fff;
     background-color:#0e3225;
+    display: flex;
+    justify-content: space-between;
 }
 
 #menu-1-left{
-    float: left;
+    padding: 10px 0px 10px 10%;
 }
 
 #menu-1-right{
-    float: right;
+    padding: 10px 10% 10px 0px;
+}
+
+#menu-1-separation-bar{
+    color: #2c5042;
+    margin: 0px 8px;
 }
 
 #bell-notification{
@@ -39,40 +58,21 @@ body{
     padding-left: 15px;
 }
 
-i{
-    padding-left: 3px;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:hover{
-    font-weight: bold;
-}
-
-.menu-1-item{
-    padding: 10px 10%;
-    display: inline;
-}
-
-.menu-1-item a{
-    color: #fff;
-}
-
 #menu-2{
     background-color:#144734;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #menu-2-left{
-    float: left;
+    padding: 0px 0px 0px 10%;
     display: flex;
 }
 
 #menu-2-right{
-    float: right;
-    margin-right: 47px;
+    padding: 0px 10% 0px 0px;;
+    margin-right: 50px;
 }
 
 #menu-2-right span{
@@ -101,9 +101,32 @@ a:hover{
     padding: 0px 5px;
 }
 
-.menu-2-item{
-    padding: 0px 10%;
-    display: inline;
+#menu_2_responsive{
+    display: none;
+}
+
+#menu-2-repsonsive-left{
+    padding: 0px 0px 0px 10%;
+}
+
+#menu-2-responsive-right{
+    padding: 0px 10% 0px 0px;
+}
+
+#menu-2-responsive-right a img{
+    border-radius: 50%;
+    margin-top: 9px;
+}
+
+#menu-2-responsive-button{
+    background-color:#144734;
+    border: 2px solid #539d37;
+    border-radius: 5px;
+}
+
+#menu-2-responsive-button-content{
+    font-size: 40px;
+    color: #fff;
 }
 
 #menu-3 {
@@ -120,12 +143,19 @@ a:hover{
     text-decoration: none;
     text-transform: uppercase;
     color:#376252;
-    margin: 0px 40px 0px 0px;
-    padding: 30px 0px 28px 0px;
+    padding: 30px 5px 28px 0px;
 }
 
 #menu-3 nav a:hover{
     border-bottom: 2px solid #376252;
+}
+
+.with-arrow-after{
+    margin: 0px 0px 0px 40px;
+}
+
+.with-arrow-after:after{
+    content: url("down-arrow.png");
 }
 
 #content-info {
@@ -160,15 +190,17 @@ div.block {
     color: #3a9017;
 }
 
-.second-line.left{
+.content-info-second-line{
     text-transform: uppercase;
-    font-size: 40px; 
+    font-size: 35px; 
 }
 
-.second-line.right span#money {
-    text-transform: uppercase;
-    font-size: 40px; 
-    font-weight: bold;
+.first-line{
+    margin-top: 8px;
+}
+
+.second-line{
+    margin-top: 4px;
 }
 
 .second-line.right span#currency {
@@ -185,18 +217,11 @@ div.block {
     font-size: 12px;
     font-weight: bold;
     color: #9d9d9c;
-}
-
-#top-separation-bar{
-    color: #2c5042
+    /* margin-top: 2px; */
 }
 
 #arrow-return{
     padding-right: 4px;
-}
-
-.separation-bar{
-    margin: 0px 8px;
 }
 
 #body-container{
@@ -357,4 +382,21 @@ a.body-container-link:hover{
     font-size: 12px;
     font-weight: bold;
     color: #555; 
+}
+
+@media (max-width: 1270px) {
+    #menu-1,
+    #menu-2,
+    #top-footer,
+    #bottom-footer{
+        display:none
+    }
+
+    #menu_2_responsive {
+        background-color:#144734;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

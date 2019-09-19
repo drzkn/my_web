@@ -10,17 +10,17 @@
     <body>
         
         <div id="menu-1">
-            <div id="menu-1-left" class="menu-1-item">
+            <div id="menu-1-left">
                 <a href="https://www.google.es">
                     David Sanchez Durán
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-            <div id="menu-1-right" class="menu-1-item">
+            <div id="menu-1-right">
                 <a href="https://www.google.es">
                     <i id="bell-notification" class="fas fa-bell"></i>
                 </a>
-                <span id="top-separation-bar" class="separation-bar">|</span>
+                <span id="menu-1-separation-bar" class="separation-bar">|</span>
                 <a href="https://www.google.es">
                     <span id="logout-text">Cerrar Sesión</span>
                     <i class="fas fa-sign-out-alt"></i>
@@ -29,7 +29,7 @@
         </div>
 
         <div id="menu-2">
-            <div id="menu-2-left" class="menu-2-item">
+            <div id="menu-2-left">
                 <img src="unicaja.png" id="logo-menu" alt="logo unicaja" height="40">
                 <nav>
                     <a href="https://www.w3schools.com">Herramientas</a>
@@ -40,24 +40,38 @@
                     <a href="https://www.w3schools.com">Contratar</a>
                 </nav>
             </div>
-            <div id="menu-2-right" class="menu-2-item">
+            <div id="menu-2-right">
                 <a href="https://www.w3schools.com">
                     <img src="skyline.jpg" alt="skyline" width="36">
                     <span>Mi área</span>
                 </a>
             </div>
         </div>
+
+        <div id="menu_2_responsive">
+            <div id="menu-2-repsonsive-left">
+                <button id="menu-2-responsive-button">
+                    <i id="menu-2-responsive-button-content" class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="menu-2-repsonsive-middle">
+                <img src="unicaja_repsonsive.png" id="logo-menu-responsive" alt="logo unicaja" height="60">
+            </div>
+            <div id="menu-2-responsive-right">
+                <a href="https://www.w3schools.com"><img src="skyline.jpg" alt="skyline" width="36"></a>
+            </div>
+        </div>
         
         <div id="menu-3">
             <nav>
                 <a href="https://www.w3schools.com">Posición Global</a>
-                <a href="https://www.w3schools.com">Cuentas<i class="fas fa-chevron-down"></i></a>
-                <a href="https://www.w3schools.com">Tarjetas<i class="fas fa-chevron-down"></i></a>
-                <a href="https://www.w3schools.com">Comercio<i class="fas fa-chevron-down"></i></a>
-                <a href="https://www.w3schools.com">Pagos y cobros<i class="fas fa-chevron-down"></i></a>
-                <a href="https://www.w3schools.com">Financiación y préstamos<i class="fas fa-chevron-down"></i></a>
-                <a href="https://www.w3schools.com">Ahorro e inversión<i class="fas fa-chevron-down"></i></a>
-                <a href="https://www.w3schools.com">Seguros<i class="fas fa-chevron-down"></i></a>
+                <span class="with-arrow-after"><a href="https://www.w3schools.com">Cuentas</a></span>
+                <span class="with-arrow-after"><a href="https://www.w3schools.com">Tarjetas</a></span>
+                <span class="with-arrow-after"><a href="https://www.w3schools.com">Comercio</a></span>
+                <span class="with-arrow-after"><a href="https://www.w3schools.com">Pagos y cobros</a></span>
+                <span class="with-arrow-after"><a href="https://www.w3schools.com">Financiación y préstamos</a></span>
+                <span class="with-arrow-after"><a href="https://www.w3schools.com">Ahorro e inversión</a></span>
+                <span class="with-arrow-after"><a href="https://www.w3schools.com">Seguros</a></span>
             </nav>
         </div>
 
@@ -67,7 +81,7 @@
                     <i class="fas fa-chevron-left" id="arrow-return"></i>Volver
                 </div>
                 <div class="second-line left">
-                    <span>Tus transferencias</span>
+                    <span  class="content-info-second-line">Tus transferencias</span>
                 </div>
             </div>
             <div id="content-info-block-right" class="block">
@@ -77,7 +91,7 @@
                     <span>Ocultar importe <i class="far fa-eye-slash"></i></span>
                 </div>
                 <div class="second-line right">
-                    <span id="money">925'42</span><span id="currency">€</span>
+                    <span id="money" class="content-info-second-line">925'42</span><span id="currency">€</span>
                 </div>
                 <div class="third-line">
                     Aún te quedan 145.58€
