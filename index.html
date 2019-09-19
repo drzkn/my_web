@@ -29,7 +29,7 @@
         </div>
 
         <div id="menu-2">
-            <div id="menu-2-left">
+            <div id="menu-2-left" class="block-left">
                 <img src="unicaja.png" id="logo-menu" alt="logo unicaja" height="40">
                 <nav>
                     <a href="https://www.w3schools.com">Herramientas</a>
@@ -40,7 +40,7 @@
                     <a href="https://www.w3schools.com">Contratar</a>
                 </nav>
             </div>
-            <div id="menu-2-right">
+            <div id="menu-2-right" class="block-right">
                 <a href="https://www.w3schools.com">
                     <img src="skyline.jpg" alt="skyline" width="36">
                     <span>Mi área</span>
@@ -49,7 +49,7 @@
         </div>
 
         <div id="menu_2_responsive">
-            <div id="menu-2-repsonsive-left">
+            <div id="menu-2-repsonsive-left" class="block-left">
                 <button id="menu-2-responsive-button">
                     <i id="menu-2-responsive-button-content" class="fas fa-bars"></i>
                 </button>
@@ -57,7 +57,7 @@
             <div id="menu-2-repsonsive-middle">
                 <img src="unicaja_repsonsive.png" id="logo-menu-responsive" alt="logo unicaja" height="60">
             </div>
-            <div id="menu-2-responsive-right">
+            <div id="menu-2-responsive-right" class="block-right">
                 <a href="https://www.w3schools.com"><img src="skyline.jpg" alt="skyline" width="36"></a>
             </div>
         </div>
@@ -76,7 +76,7 @@
         </div>
 
         <div id="content-info">
-            <div id="content-info-block-left" class="block">
+            <div id="content-info-block-left" class="block-left">
                 <div class="first-line">
                     <i class="fas fa-chevron-left" id="arrow-return"></i>Volver
                 </div>
@@ -84,7 +84,31 @@
                     <span  class="content-info-second-line">Tus transferencias</span>
                 </div>
             </div>
-            <div id="content-info-block-right" class="block">
+            <div id="content-info-block-right" class="block-right">
+                <div class="first-line">
+                    <span>Total transferido <i class="fas fa-info-circle"></i></span>
+                    <span class="separation-bar">|</span>
+                    <span>Ocultar importe <i class="far fa-eye-slash"></i></span>
+                </div>
+                <div class="second-line right">
+                    <span id="money" class="content-info-second-line">925'42</span><span id="currency">€</span>
+                </div>
+                <div class="third-line">
+                    Aún te quedan 145.58€
+                </div>
+            </div>
+        </div>
+
+        <div id="content-info-responsive">
+            <div id="content-info-responsive-block-left" >
+                <div class="first-line">
+                    <i class="fas fa-chevron-left" id="arrow-return"></i>Volver
+                </div>
+                <div class="second-line left">
+                    <span  class="content-info-second-line">Tus transferencias</span>
+                </div>
+            </div>
+            <div id="content-info-responsive-block-right" >
                 <div class="first-line">
                     <span>Total transferido <i class="fas fa-info-circle"></i></span>
                     <span class="separation-bar">|</span>
@@ -156,7 +180,50 @@
             </div>
         </div>
 
-        <div id="footer">
+        <div id="body-container-responsive">
+            <a href="https:www.google.es" class="body-container-link">
+                <img src="Pendientes.png" alt="pendientes" height="150">
+                <div class="body-container-item">
+                    <div class="body-container-item-title red">Pendientes<i class="fas fa-arrow-right"></i></div>
+                    <div class="body-container-item-body">Operaciones pendientes de firma y transferencia urgentes</div>
+                    <div class="body-container-item-footer"><span>1</span> pendiente de firma</div>
+                </div>
+            </a>
+            <a href="https:www.google.es" class="body-container-link">
+                <img src="Borradores.png" alt="borradores" height="150">
+                <div class="body-container-item">
+                    <div class="body-container-item-title red">Borradores<i class="fas fa-arrow-right"></i></div>
+                    <div class="body-container-item-body">Transferencia sin finalizar</div>
+                    <div class="body-container-item-footer"><span>2</span> transferencias en curso</div>
+                </div>                    
+            </a>
+            <a href="https:www.google.es" class="body-container-link">
+                <img src="Histórico.png" alt="historico" height="150">
+                <div class="body-container-item">
+                    <div class="body-container-item-title green">Histórico<i class="fas fa-arrow-right"></i></div>
+                    <div class="body-container-item-body">Todas las transferencias</div>
+                    <div class="body-container-item-footer"><img src="PN.png" height="35" alt="PN"> Contacto frecuente</div>
+                </div>    
+            </a>
+            <a href="https:www.google.es" class="body-container-link">
+                <img src="Favoritas.png" alt="favoritas" height="150">
+                <div class="body-container-item">
+                    <div class="body-container-item-title green">Favoritos<i class="fas fa-arrow-right"></i></div>
+                    <div class="body-container-item-body">Transferencias guardads como favoritas</div>
+                    <div class="body-container-item-footer"><span>6</span> Favoritas</div>
+                </div>
+            </a>
+            <a href="https:www.google.es" class="body-container-link">
+                <img src="Programadas.png" alt="programadas" height="150">
+                <div class="body-container-item">
+                    <div class="body-container-item-title green">Programadas<i class="fas fa-arrow-right"></i></div>
+                    <div class="body-container-item-body">Se emitirán más adelante o de forma recurrente</div>
+                    <div class="body-container-item-footer"><span>2</span> Puntuales <span>4</span> Periódicas</div>
+                </div>                    
+            </a>
+        </div>
+
+        <footer id="footer">
             <div id="top-footer">
                 <div id="top-footer-left" class="item">
                     <img src="unicaja.png" id="logo-footer" alt="logo unicaja" height="40">
@@ -180,7 +247,7 @@
                     </nav>
                 </div>
             </div>
-        </div>
+        </footer>
        
     </body>
 </html>
