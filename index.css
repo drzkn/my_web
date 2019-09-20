@@ -236,6 +236,7 @@ div.block-right {
 .content-info-second-line{
     text-transform: uppercase;
     font-size: 35px; 
+    padding-right: 10px;
 }
 
 .first-line{
@@ -246,8 +247,9 @@ div.block-right {
     margin-top: 4px;
 }
 
-.second-line.right span#currency {
+#currency {
     position: absolute;
+    right: 10%;
     margin-top: 4px;
 }
 
@@ -351,7 +353,7 @@ div.block-right {
 }
 
 #body-container{
-    padding: 30px 10% 0px 10%;
+    padding: 30px 10% 240px 10%;
 }
 
 .body-rows{
@@ -482,8 +484,8 @@ a.body-container-link:hover{
 }
 
 #footer{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
     height: 80px;
     color: white;
